@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ЗАДАНИЕ 1 -->
+    <script>
+        var a = 1, b = 1, c, d;
+        c = ++a; alert(c);           // 2 - сначала прибавляем 1 к a, потом выводим
+        d = b++; alert(d);           // 1 - сначала выводим d, потом прибывляем 1
+        c = (2+ ++a); alert(c);      // 5 - на этот момент a=2, к ней прибавляем 3
+        d = (2+ b++); alert(d);      // 4 - к 2 прибавяется b+1
+        alert(a);                    // 3 - мы два раза к b прибавили 1
+        alert(b);                    // 3 - мы два раза к a прибавили 1
+    </script>
+</body>
+</html>
