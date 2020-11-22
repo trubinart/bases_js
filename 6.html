@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ЗАДАНИЕ 6 -->
+    <script>
+        // Умножение
+        function multiply(a,b){
+            return a * b;
+        }
+
+        //Деление
+        function devide(a,b){
+            if (b > 0){
+                return a / b;
+            }
+            else if (b = 0){
+                return document.write("делить на ноль нельзя");
+            }
+
+        }
+
+        //Сумма
+        function sum(a,b){
+            return a + b
+        }
+
+        //Вычитание
+        function minus(a,b){
+            return a - b
+        }
+
+        function mathOperation(arg1, arg2, operation){
+            switch(operation){
+                case multiply: return multiply(arg1,arg2);
+                case devide: return devide(arg1,arg2);
+                case sum: return sum(arg1,arg2);
+                case minus: return minus(arg1,arg2);
+                default: document.write("не выбрана операция");
+            }
+        }
+
+        alert(mathOperation(8,1,sum))
+
+    </script>
+</body>
+</html>
