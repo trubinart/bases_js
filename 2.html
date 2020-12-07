@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .productCard{
+            height: 350px;
+            width: 500px;
+            border: 1px solid #000;
+        }
+
+        .picture{
+            background-color: burlywood;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+        }
+
+        .buttom{
+            margin-left: 20px;
+            border: 1px solid #000;
+            width: 100px;
+        }
+
+        p{
+            margin-left: 20px;
+            font-size: x-large;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .popup{
+            height: 350px;
+            width: 500px;
+            border: 1px solid #000;
+            align-self: center;
+            display: none;
+        }
+        .change{
+            align-self: center;
+            margin-top: 20px;
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="productCard">
+        <p>Шляпа</p>
+        <div class="picture">
+            <img src="img/1.jpg" alt="картинка">
+        </div>
+        <div class="buttom">
+            Купить
+        </div>
+    </div>
+    <div class="popup">
+        <img src="img/1.jpg" alt="картинка" class = "img_change">
+    </div>
+    <div class="change">
+        <a href="#">Сменить изображение</a>
+    </div>
+    <script src="main-2.js"></script>
+</body>
+</html>
