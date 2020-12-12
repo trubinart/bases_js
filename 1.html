@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+
+     <style>
+         .productString{
+            display: flex;
+            justify-content: space-around;
+            width: 500px;
+            align-items: center;
+         }
+
+         h2{
+             margin-left: 15px;
+             background-color: gold;
+             width: 500px;
+         }
+
+         .final{
+            margin-left: 200px;
+         }
+
+         .next{
+            margin-left: 430px;
+            margin-top: 10px;
+         }
+
+         .deliveryInput, .commentInput {
+            width: 500px;
+            height: 100px;
+            border: 1px  solid #000;
+
+         }
+
+         .open{
+             display: block;
+         }
+
+         .delivery, .comment{
+            width: 500px;
+            display: none;
+         }
+     </style>
+
+ </head>
+ <body>
+     <h2>Состав корзины</h2>
+     <div class="list">
+     </div>
+     <h2>Адрес доставки</h2>
+     <div class="delivery">
+         <input type="text" class="deliveryInput">
+        <button class="next" id="deliveryNext">Далее</button>
+    </div>
+    <h2>Комментарий</h2>
+    <div class="comment">
+        <input type="text" class="commentInput">
+       <button class="next" id="commentNext">Далее</button>
+   </div>
+
+
+     <script src="main-1.js"></script>
+
+ </body>
+ </html>
